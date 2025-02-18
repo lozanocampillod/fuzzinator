@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fuzzinator"
+version = "0.1.0"
+description = "A powerful web application fuzzing tool with multiple FUZZ keyword support"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+keywords = ["security", "fuzzing", "web", "penetration-testing", "http"]
+authors = [
+    {name = "Fuzzinator Contributors"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7", 
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Security",
+]
+dependencies = [
+    "requests",
+    "colorama",
+]
+
+[project.scripts]
+fuzzinator = "fuzzinator:main"
+
+[project.urls]
+"Homepage" = "https://github.com/lozanocampillod/fuzzinator"
+"Bug Tracker" = "https://github.com/username/lozanocampillod/issues"
